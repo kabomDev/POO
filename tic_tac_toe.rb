@@ -1,7 +1,7 @@
 require_relative 'Board'
 require_relative 'Player'
 
-def player_play(board)
+def player_play(board) # la partie se joue ici
   count = 0
   index = 0
   puts "#{@player1}, Choisissez une case entre 1 et 9"
@@ -30,7 +30,7 @@ def player_play(board)
 end
 #=====================================================================#
 
-def start_game
+def start_game #lancement du jeu
 
   puts "================================"
   puts "=====LE JEU DU TIC TAC TOE======"
