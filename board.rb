@@ -2,6 +2,7 @@ require_relative 'Player'
 
 class Board
   attr_accessor :board
+  # on crée le plateau
   def initialize(board)
     @board = board
     (@board = [" "," "," "," "," "," "," "," "," "])
@@ -12,11 +13,11 @@ class Board
      puts "#{@board[6]} | #{@board[7]} | #{@board[8]}"
 
   end
-
-  def boardcase
+# on crée les cases qui correspondent au plateau
+  def boardcase 
       @boardcase = ["1","2","3","4","5","6","7","8","9"]
   end
-
+# on crée les conditions de victoires
   def win_condition?(player)
     if (@board[0] && @board[1] && @board[2] = @player1.symbol) ||
         (@board[3] && @board[4] && @board[5] = @player1.symbol) ||
