@@ -1,0 +1,16 @@
+source "https://rubygems.org"
+ruby '2.5.1'
+gem 'rubocop', '~> 0.57.2'
+gem 'pry'
+
+gem 'rake', '< 11.0'
+gem 'rspec', '~> 3.4'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'twitter'
+gem 'nokogiri'
+gem 'httparty', '~> 0.16.2'
+
+gem 'watir'
+gem 'selenium-webdriver'
